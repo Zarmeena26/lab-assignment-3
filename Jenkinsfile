@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_USER = 'your_dockerhub_username'
+        DOCKER_HUB_USER = 'zarmeena26'
         IMAGE_NAME = 'malware-detector'
         DOCKER_HUB_CREDS = credentials('docker-hub-credentials-id')
     }
