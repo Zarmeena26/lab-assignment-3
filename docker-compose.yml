@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  malware-detection:
+    image: ${DOCKER_HUB_USERNAME}/malware-detector:latest
+    volumes:
+      - ./network_logs:/input/logs
+      - ./output:/output
