@@ -21,7 +21,7 @@ pipeline {
             steps {
                 // Ensure logs directory exists on host
                 sh "mkdir -p ./network_logs"
-                sh "docker-compose up -d"
+                sh "docker compose up -d"
             }
         }
     }
